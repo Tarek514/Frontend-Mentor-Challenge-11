@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Subscription Success</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <article>
+        <img
+          src="assets/images/icon-list.svg"
+          alt="Checkmark icon"
+          class="icon-list"
+        />
+        <h1>Thanks for subscribing!</h1>
+        <div class="confirmation-container">
+          <p id="confirmation-message">
+            A confirmation email has been sent to <span id="user-email"></span>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+          <button id="dismiss" onclick="goBack()">Dismiss message</button>
+        </div>
+      </article>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#container article {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin: 20px;
+  transform: translateY(-20px);
+}
+
+.icon-list {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  color: hsl(234, 29%, 20%);
+}
+
+#confirmation-message {
+  color: hsl(234, 12%, 34%);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#user-email {
+  font-weight: bold;
+}
+
+#dismiss {
+  width: 100%;
+  max-width: 20rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+#dismiss:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 78%, 70%),
+    hsl(0, 60%, 50%)
+  );
+  box-shadow: 0 6px 10px hsl(0, 60%, 50%);
+}
+
+.submission-form {
+  font-size: 11px;
+  margin-top: 30px;
+  position: relative;
+}
+
+#text {
+  display: block;
+}
+
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  max-width: 20rem;
+  height: 3rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#email {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+#submit {
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+#submit:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 78%, 70%),
+    hsl(0, 60%, 50%)
+  );
+  box-shadow: 0 6px 10px hsl(0, 60%, 50%);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  background: url(./assets/images/icon-list.svg) no-repeat left center;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+#error {
+  background-color: hsl(0, 78%, 80%);
+  color: hsl(0, 0%, 100%);
+}
+
+#error-message {
+  color: red;
+  display: none;
+  position: absolute;
+  right: 80px;
+}
+
+input[type="email"].error {
+  color: hsl(0, 78%, 60%);
+  background-color: hsl(0, 100%, 95%);
+  border: 1px solid hsl(0, 78%, 60%);
+}
